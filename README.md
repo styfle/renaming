@@ -38,5 +38,6 @@ For existing repositories, renaming the default branch today causes a set of cha
 - Draft releases need to be retargeted to the new branch
 - Branch protection policies need to be transferred to the new branch
 - GitHub Pages expects content in the `master` or `gh-pages` branch
+- GitHub Actions Workflow syntax might contain [on.push.branches.master](https://docs.github.com/en/actions/reference/workflow-syntax-for-github-actions#onpushpull_requestbranchestags)
 
 By the end of the year, we'll make it seamless for existing repositories to rename their default branch. When you rename the branch, we’ll retarget your open PRs and draft releases, move your branch protection policies, and more - all automatically. We’re updating GitHub Pages to allow building from any branch. And, we’re also looking into redirecting users who `git fetch` or `git clone` the old branch name to the new branch name (with a warning and instructions to update their local clone), so it’s easy for your contributors to move. You’ll be able to do a rename from GitHub.com, GitHub Desktop, or the CLI.
